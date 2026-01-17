@@ -53,7 +53,7 @@ export const HeroSection = () => {
               {/* CUT CORNER */}
               <span className="absolute -top-4 -right-4 w-20 h-20 bg-red-600 rotate-45" />
 
-              <p className="relative z-10 text-gray-700 leading-relaxed mb-8">
+              <p className="relative z-10 text-gray-800 font-semibold text-lg leading-relaxed mb-8">
                 Transforming the structural steel industry with 30+ years of
                 expertise in design, manufacturing, and engineering excellence.
               </p>
@@ -61,6 +61,11 @@ export const HeroSection = () => {
               <div className="relative z-10 flex flex-wrap gap-4">
                 <Button
                   size="lg"
+                  onClick={() =>
+                    document.getElementById("contact")?.scrollIntoView({
+                      behavior: "smooth",
+                    })
+                  }
                   className="bg-black text-white hover:bg-red-600 transition-colors"
                 >
                   Contact Me
