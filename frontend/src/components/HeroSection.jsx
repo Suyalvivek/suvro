@@ -8,31 +8,24 @@ export const HeroSection = () => {
       {/* ================= SUVRO BACKGROUND LETTERS ================= */}
 <div className="relative w-full overflow-hidden mt-4">
   <div className="relative max-w-[1400px] mx-auto px-6">
-    <div className="grid grid-cols-5 items-end gap-0 h-[300px]">
-      {/* Shared letter style */}
+    <div className="flex items-end justify-between h-[300px]">
       {["S", "U", "V", "R"].map((char) => (
-        <div
+        <span
           key={char}
-          className="flex justify-center items-end"
+          className="text-[260px] font-extrabold text-black/5 select-none leading-none"
         >
-          <span
-            className="block text-[260px] font-extrabold text-black/5 select-none"
-            style={{ lineHeight: "1", letterSpacing: "-0.02em" }}
-          >
-            {char}
-          </span>
-        </div>
+          {char}
+        </span>
       ))}
+
       {/* O = IMAGE */}
-      <div className="flex justify-center items-end">
-        <div className="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px] mb-[12px]">
-          <div className="absolute inset-0 rounded-full border-[10px] border-red-600" />
-          <img
-            src="/images/suvro-logo.webp"
-            alt="Suvro Ghosh"
-            className="w-full h-full rounded-full object-cover"
-          />
-        </div>
+      <div className="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px] mb-[12px] flex-shrink-0">
+        <div className="absolute inset-0 rounded-full border-[10px] border-red-600" />
+        <img
+          src="/images/suvro-logo.webp"
+          alt="Suvro Ghosh"
+          className="w-full h-full rounded-full object-cover"
+        />
       </div>
     </div>
   </div>
