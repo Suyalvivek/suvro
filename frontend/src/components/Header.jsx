@@ -15,14 +15,17 @@ export const Header = () => {
       document.documentElement.classList.toggle("dark", storedTheme === "dark");
     }
   }, []);
+const toggleTheme = () => {
+  const isDark = document.documentElement.classList.contains("dark");
 
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    document.documentElement.classList.toggle("dark", newTheme === "dark");
-    localStorage.setItem("theme", newTheme);
-  };
-  
+  if (isDark) {
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+  } else {
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  }
+};
   const navLinks = [
     { href: '#about', label: 'About' },
     { href: '#company', label: 'Company' },

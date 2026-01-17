@@ -11,17 +11,31 @@ export const HeroSection = () => {
         pt-20
         bg-white
         dark:bg-black
-        bg-[url('/images/hero-bg-red2peg')]
-        bg-cover
-        bg-center
-        bg-no-repeat
       "
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-black/50 dark:from-black/60 dark:via-black/50 dark:to-black/70 pointer-events-none" />
+      {/* Background YouTube Video */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <iframe
+          className="
+            absolute
+            top-1/2 left-1/2
+            w-[120vw] h-[120vh]
+            -translate-x-1/2 -translate-y-1/2
+            pointer-events-none
+            opacity-85
+          "
+          src="https://www.youtube.com/embed/uozQA0QWr4k?autoplay=1&mute=1&loop=1&playlist=uozQA0QWr4k&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1"
+          title="Hero background video"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        />
+      </div>
+      <div className="absolute inset-0 z-10 bg-gradient-to-br from-black/35 via-black/25 to-black/45 dark:from-black/55 dark:via-black/45 dark:to-black/65 pointer-events-none" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(220,38,38,0.25),transparent_45%)] pointer-events-none" />
 
       {/* ================= SUVRO BACKGROUND LETTERS ================= */}
-<div className="relative z-10 w-full overflow-hidden mt-4">
+<div className="relative z-20 w-full overflow-hidden mt-4">
   <div className="relative z-10 max-w-[1400px] mx-auto px-6">
     <div className="grid grid-cols-5 items-end h-[300px] gap-6">
       {["S", "U", "V", "R"].map((char) => (
@@ -31,8 +45,9 @@ export const HeroSection = () => {
             text-[220px]
             xl:text-[260px]
             font-extrabold
-            text-black/15
-            dark:text-white/20
+            text-black/25
+            dark:text-white/35
+            dark:drop-shadow-[0_0_24px_rgba(255,255,255,0.25)]
             select-none
             leading-none
             text-center
@@ -56,7 +71,7 @@ export const HeroSection = () => {
 </div>
 
       {/* ================= CONTENT BELOW ================= */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-24">
+      <div className="relative z-20 max-w-7xl mx-auto px-6 pt-24 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           
          {/* LEFT COLUMN */}
