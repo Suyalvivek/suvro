@@ -2,7 +2,7 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 // Footer
 
 export const Footer = () => (
-  <footer className="bg-foreground text-background py-12">
+  <footer className="bg-black text-white py-12">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="flex items-center gap-3">
@@ -13,15 +13,15 @@ export const Footer = () => (
           />
           <div>
             <p className="font-semibold">Suvro Ghosh</p>
-            <p className="text-sm text-background/70">CEO, Caliber Tech Solutions Pvt Ltd</p>
+            <p className="text-sm text-white/70">CEO, Caliber Tech Solutions Pvt Ltd</p>
           </div>
         </div>
         
         <nav className="flex items-center gap-6">
-          <a href="#about" className="text-sm text-background/70 hover:text-background transition-colors">About</a>
-          <a href="#company" className="text-sm text-background/70 hover:text-background transition-colors">Company</a>
-          <a href="#services" className="text-sm text-background/70 hover:text-background transition-colors">Services</a>
-          <a href="#contact" className="text-sm text-background/70 hover:text-background transition-colors">Contact</a>
+          <a href="#about" className="text-sm text-white/70 hover:text-background transition-colors">About</a>
+          <a href="#company" className="text-sm text-white/70 hover:text-background transition-colors">Company</a>
+          <a href="#services" className="text-sm text-white/70 hover:text-background transition-colors">Services</a>
+          <a href="#contact" className="text-sm text-white/70 hover:text-background transition-colors">Contact</a>
         </nav>
       </div>
 
@@ -47,8 +47,8 @@ export const Footer = () => (
         ))}
       </div>
       
-      <div className="border-t border-background/20 mt-8 pt-8 text-center">
-        <p className="text-sm text-background/70">Copyright © 2025 Suvro Ghosh. All Rights Reserved.</p>
+      <div className="border-t border-white/20 mt-8 pt-8 text-center">
+        <p className="text-sm text-white/70">Copyright © 2025 Suvro Ghosh. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
