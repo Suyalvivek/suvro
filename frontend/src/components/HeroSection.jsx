@@ -6,36 +6,35 @@ export const HeroSection = () => {
     <section className="relative bg-white overflow-hidden pt-20">
 
       {/* ================= SUVRO BACKGROUND LETTERS ================= */}
-<div className="relative max-w-[1700px] mx-auto px-6 mt-4">
-  <div className="relative h-[360px] grid grid-cols-5 items-end">
-
-    {/* Shared letter style */}
-    {["S", "U", "V", "R"].map((char) => (
-      <div
-        key={char}
-        className="flex justify-center items-end"
-      >
-        <span
-          className="text-[300px] font-extrabold leading-none text-black/5"
-          style={{ lineHeight: "0.9" }}
+<div className="relative w-full overflow-hidden mt-4">
+  <div className="relative max-w-[1400px] mx-auto px-6">
+    <div className="grid grid-cols-5 items-end gap-0 h-[300px]">
+      {/* Shared letter style */}
+      {["S", "U", "V", "R"].map((char) => (
+        <div
+          key={char}
+          className="flex justify-center items-end"
         >
-          {char}
-        </span>
-      </div>
-    ))}
-
-    {/* O = IMAGE */}
-    <div className="flex justify-center items-end">
-      <div className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px] mb-[8px]">
-        <div className="absolute inset-0 rounded-full border-[10px] border-red-600" />
-        <img
-          src="/images/suvro-logo.webp"
-          alt="Suvro Ghosh"
-          className="w-full h-full rounded-full object-cover"
-        />
+          <span
+            className="block text-[260px] font-extrabold text-black/5 select-none"
+            style={{ lineHeight: "1", letterSpacing: "-0.02em" }}
+          >
+            {char}
+          </span>
+        </div>
+      ))}
+      {/* O = IMAGE */}
+      <div className="flex justify-center items-end">
+        <div className="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px] mb-[12px]">
+          <div className="absolute inset-0 rounded-full border-[10px] border-red-600" />
+          <img
+            src="/images/suvro-logo.webp"
+            alt="Suvro Ghosh"
+            className="w-full h-full rounded-full object-cover"
+          />
+        </div>
       </div>
     </div>
-
   </div>
 </div>
 
