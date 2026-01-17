@@ -10,7 +10,7 @@ export const HeroSection = () => {
           {/* SUVR BACKGROUND TEXT */}
           <svg
             viewBox="0 0 1600 360"
-            className="absolute inset-0 w-full h-full pointer-events-none"
+            className="absolute inset-0 w-[1600px] h-full max-w-none pointer-events-none"
             preserveAspectRatio="xMidYMid meet"
           >
             <text
@@ -59,7 +59,14 @@ export const HeroSection = () => {
           </svg>
 
           {/* IMAGE AS O */}
-          <div className="absolute right-[9%] bottom-[28px]">
+          <div
+            className="
+              absolute bottom-[28px]
+              right-[7%]
+              xl:right-[8.5%]
+              2xl:right-[10%]
+            "
+          >
             <div className="relative w-[260px] h-[260px] md:w-[320px] md:h-[320px]">
               <div className="absolute inset-0 rounded-full border-[10px] border-red-600" />
               <img
@@ -87,7 +94,6 @@ export const HeroSection = () => {
             <p className="text-black font-medium">Founder & CEO</p>
           </div>
 
-          {/* RIGHT COLUMN */}
           {/* RIGHT COLUMN */}
           <div className="max-w-xl lg:pt-[88px]">
             <div className="relative bg-white/90 backdrop-blur-md border border-gray-200 rounded-2xl px-8 py-8 shadow-[0_20px_60px_rgba(0,0,0,0.08)] overflow-hidden">
